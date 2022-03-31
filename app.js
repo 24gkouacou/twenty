@@ -6,7 +6,7 @@ function n(){
 
         
 }
-n()
+
 
 function grace(){ 
     do{
@@ -21,9 +21,7 @@ function grace(){
         }while (CPTotal < 16);
 }
 
-grace
-
-function human () { 
+function human() { 
     do{
         var USRan = Math.floor(Math.random()* 10 ) + 1;
 
@@ -40,8 +38,6 @@ function human () {
     } while ((USTotal < 20 ) && (desicioin == "y"));
 }
     
-human()
-    
 function results() {
     do{
     if ( ( CPTotal < USTotal) && ( CPTotal <= 20) && (USTotal <= 20) ){
@@ -57,10 +53,15 @@ function results() {
     }while (q2 == "y")
 }
 
-results()
+function program() {
+    n()
+    grace()
+    human()
+    results()
+}
     
-    // if (q == "y") {
-    //     program() // recursive function
-    // }else{
-    //     alert("Thank you for playing")
-    //     }    
+    if (q == "y") {
+        program() // recursive function
+    }else{
+        alert("Thank you for playing")
+        }    
